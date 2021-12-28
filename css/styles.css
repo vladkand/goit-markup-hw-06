@@ -15,6 +15,7 @@
   --soc-footer-color: rgba(255, 255, 255, 0.1);
   --function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -23,6 +24,7 @@ body {
   background-color: var(--body-prime-color);
   color: var(--text-prime-color);
 }
+
 /* ЗАГОЛОВКИ СБРОС отступов */
 p,
 h1,
@@ -35,22 +37,31 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 /* РИСУНКИ В INLINE-BLOCK */
 img {
   display: block;
   padding: 0;
   margin: 0;
 }
+
 /* === УДАЛЕНЫ МАРКЕРЫ ДЛЯ ВСЕХ СПИСКОВ === */
 .list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
+/* PADDING для ВСЕХ INPUT  */
+input {
+  padding: 0;
+}
+
 /* === УДАЛЕНЫ ПОДЧЕРКИВАНИЕ ССЫЛОК ===  */
 .link {
   text-decoration: none;
 }
+
 /* --= ПАРАМЕТРЫ КОНТЕЙНЕРА =-- */
 .container {
   width: 1200px;
@@ -81,7 +92,6 @@ img {
 .prime-nav {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 /* ----  СТИЛЬ ЛОГОТИПА HEADER И FOOTER   --- */
@@ -90,6 +100,7 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+
 .logo-top,
 .logo-bоttom {
   font-family: Raleway;
@@ -104,6 +115,7 @@ img {
   /* --- ЦВЕТ ЛОГОТИПА HEADER  --- */
   color: var(--logo-studio-color);
 }
+
 /* -- ЦВЕТОВОЙ АКЦЕНТ ЛОГОТИПА HEADER И FOOTER -- */
 .accent {
   color: var(--text-accent-color);
@@ -118,13 +130,16 @@ img {
   display: flex;
   align-items: center;
 }
+
 .site-nav {
   display: flex;
   margin-left: 93px;
 }
+
 .site-nav .item + .item {
   margin-left: 50px;
 }
+
 .site-nav .link {
   display: block;
   position: relative;
@@ -137,7 +152,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-prime-color);
 
-  /* text-decoration: none; */
   transition: color 250ms var(--function);
 }
 
@@ -149,6 +163,7 @@ img {
   bottom: -1px;
   width: 100%;
   height: 4px;
+
   border-radius: 2px;
   background-color: var(--text-accent-color);
 }
@@ -213,7 +228,7 @@ img {
 
 /* ===========  HEADER FIN  ====== */
 
-/* ===  MAIN  === */
+/* ===========  MAIN  ============ */
 
 /* ---  СТИЛЬ ДЛЯ HERO  --- */
 
@@ -222,8 +237,8 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 
+  text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-Img-opt.jpg);
   /* background-color: var(--bg-hero-color); */
@@ -249,7 +264,7 @@ img {
   color: var(--bg-prime-color);
 }
 
-/* ==== КНОПКА HERO Заказать === */
+/* ---- КНОПКА HERO Заказать ---- */
 .hero-btn.btn {
   display: inline-block;
   padding: 10px 32px;
@@ -297,20 +312,22 @@ img {
 .nuances-list .item:not(:last-child) {
   margin-right: 30px;
 }
+
 .nuances-list .item {
   width: 270px;
 }
 
 .nuances-title {
+  margin-bottom: 10px;
   /* padding-bottom: 10px; */
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  margin-bottom: 10px;
 }
+
 .nuances-list .txt {
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -324,7 +341,6 @@ img {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-
   border-radius: 4px;
   background-color: var(--bg-second-color);
 }
@@ -367,13 +383,12 @@ img {
   padding-bottom: 94px;
   background-color: var(--bg-second-color);
 }
-
 .team-list {
   display: flex;
   justify-content: space-between;
 }
 
-/* ФОН КАРТОЧКИ КОМАНДЫ */
+/* --- ФОН КАРТОЧКИ КОМАНДЫ --- */
 .team-list > .item {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--bg-prime-color);
@@ -447,7 +462,7 @@ img {
   fill: var(--bg-prime-color);
 }
 
-/* ======================СЕКЦИЯ КЛИЕНТЫ================= */
+/* =================== СЕКЦИЯ КЛИЕНТЫ ================= */
 .section-client {
   padding-top: 96px;
   padding-bottom: 92px;
@@ -473,7 +488,6 @@ img {
 
   border: 1px solid var(--icon-soc-color);
   border-radius: 4px;
-
   transition: border-color 250ms var(--function), outline-color 250ms var(--function);
   /* background-color: violet; */
 }
@@ -488,7 +502,6 @@ img {
   outline-color: var(--text-accent-color);
   border: 1px solid var(--text-accent-color);
 }
-
 .link-client:hover .icon-client,
 .link-client:focus .icon-client {
   fill: var(--text-accent-color);
@@ -539,6 +552,8 @@ img {
   color: var(--bg-prime-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  outline: var(--text-accent-color);
 }
 
 /* --- ПРИМЕРЫ  РАБОТ  --- */
@@ -560,14 +575,17 @@ img {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  /* background-color: rgb(255, 182, 129); */
 }
 
 .work-item:nth-child(3n) {
   margin-right: 0;
 }
+
 .work-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
 .work-item .link {
   display: inline-block;
   transition: box-shadow 250ms var(--function);
@@ -586,6 +604,7 @@ img {
   position: relative;
   overflow: hidden;
 }
+
 .overlay-box {
   position: absolute;
   top: 0;
@@ -602,8 +621,10 @@ img {
 .work-item .link:focus .overlay-box {
   transform: translateY(0);
 }
+
 .work-descript {
   padding: 63px 24px;
+
   font-size: 18px;
   font-weight: 400;
   line-height: 1.56;
@@ -614,10 +635,12 @@ img {
 /* ---- НИЗ КАРТОЧЕК --- */
 .card-content {
   padding: 20px 24px;
+
   border-bottom: 1px solid var(--border-card-color);
   border-left: 1px solid var(--border-card-color);
   border-right: 1px solid var(--border-card-color);
 }
+
 .example-list .txt {
   font-size: 16px;
   line-height: 1.88;
@@ -630,26 +653,30 @@ img {
 .footer {
   background-color: var(--hero-footer-color);
 }
+
 .address-logo {
-  padding-right: 18px;
+  /* padding-right: 18px; */
   margin-right: 70px;
 }
+
 .footer-container {
   display: flex;
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .logo-bоttom {
   display: block;
   margin-bottom: 20px;
 }
+
 /* --- БЕЛЫЙ ЦВЕТ ЛОГОТИПА ФУТЕРА --- */
 .logo-footer {
   color: var(--bg-prime-color);
 }
 
-/* === АДРЕСС ПРОСПЕКТТ == */
+/* --- АДРЕСС ПРОСПЕКТТ --- */
 .address .text {
   font-family: Roboto;
   font-style: normal;
@@ -659,6 +686,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--bg-prime-color);
 }
+
 /* --- АДРЕСНЫЕ ССЫЛКИ В ФУТЕРЕ  --- */
 .contact-footer .link {
   display: block;
@@ -670,10 +698,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--link-footer-color);
 }
+
 .contact-footer .link:hover,
 .contact-footer .link:focus {
   color: var(--text-accent-color);
 }
+
 .contact-footer .item + .item {
   margin-top: 9px;
 }
@@ -690,16 +720,20 @@ img {
 .title-footer {
   display: flex;
   margin-bottom: 20px;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
-  color: var(--bg-prime-color);
   letter-spacing: 0.03em;
+  color: var(--bg-prime-color);
+
   text-transform: uppercase;
 }
+
 .soc-list-footer {
   display: flex;
 }
+
 .item-social:not(:last-child) {
   margin-right: 10px;
 }
@@ -716,11 +750,7 @@ img {
 
   /* outline: 1px solid teal; */
 }
-/* .link-soc:hover,
-.link-soc:focus {
-  background-color: var(--text-accent-color);
-    outline: none;
-} */
+
 .soc-list-footer .icon-soc {
   fill: var(--bg-prime-color);
 }
@@ -734,6 +764,7 @@ img {
   display: flex;
   flex-direction: column;
 }
+
 .mailing-label {
   margin-bottom: 20px;
 
@@ -748,11 +779,13 @@ img {
 .form-footer {
   display: flex;
 }
+
 .mailing-input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
+  /* padding-right: 5px; */
 
   font-size: 16px;
   line-height: 1.25;
@@ -764,6 +797,7 @@ img {
   transition: border-color 250ms var(--function);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
+
 .mailing-input::placeholder {
   font-size: 16px;
   font-weight: 400;
@@ -785,7 +819,6 @@ img {
   /* justify-content: center; */
   align-items: center;
   padding-left: 28px;
-  /* margin-right: 10px; */
 
   font-size: 16px;
   font-weight: 700;
@@ -814,7 +847,6 @@ img {
   margin-left: 10px;
   fill: var(--bg-prime-color);
 }
-
 /* ============ FOOTER FIN ============== */
 
 /* =============== МОДАЛЬНОЕ ОКНО ========= */
@@ -836,6 +868,7 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(2.5) rotateX(-360deg);
 }
@@ -880,10 +913,12 @@ img {
 .modal-close:focus {
   outline-color: var(--text-accent-color);
 }
+
 .modal-close-icon {
   fill: var(--logo-studio-color);
   transition: fill 250ms var(--function);
 }
+
 .modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
   fill: var(--text-accent-color);
@@ -900,6 +935,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-align: center;
+
   color: var(--logo-studio-color);
 }
 
@@ -937,6 +973,7 @@ img {
 .icon-position {
   position: relative;
 }
+
 .form-icon {
   position: absolute;
   left: 12px;
@@ -946,6 +983,7 @@ img {
   fill: var(--text-second-color);
   transition: fill 250ms var(--function);
 }
+
 .form-input:focus + .form-icon {
   fill: var(--text-accent-color);
 }
@@ -978,13 +1016,14 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
 .form-input:focus,
 .input-comment:focus {
   border-color: var(--text-accent-color);
   outline-color: var(--text-accent-color);
 }
 
-/* ====== СТИЛИ CHECK BOX ======= */
+/* --- СТИЛИ CHECK BOX --- */
 
 /* --- ОБЕРТКА ДЛЯ ВСЕГО ЧЕК_БОКСА --- */
 .check-agree {
@@ -1020,7 +1059,7 @@ img {
   overflow: hidden;
 }
 
-/* --- ФОН И ГЕОМЕТРИЯ ДЛЯ ПСЕВДО CHECK --  */
+/* --- ФОН И ГЕОМЕТРИЯ ДЛЯ ПСЕВДО-CHECK --  */
 .icon-box {
   display: flex;
   justify-content: center;
@@ -1030,19 +1069,20 @@ img {
   margin-right: 7px;
 
   border: 2px solid var(--text-second-color);
-  border-radius: 4px;
+  border-radius: 2px;
 
   transition: background-color 250ms var(--function), border-color 250ms var(--function);
 }
-/* --- ГЕОМЕТРИЯ SVG КАРТИНКИ --- */
+
+/* --- ПОЗИЦИОНИРОВАНИЕ SVG КАРТИНКИ --- */
 .icon-check {
   position: absolute;
 }
+
 /* --- ПОВЕДЕНИЕ ЧЕК-БОКСА ПРИ :CHECKED --- */
 .check-box:checked + .icon-box {
   background-color: var(--text-accent-color);
   border-color: var(--text-accent-color);
-  /* border-color: green; */
 }
 
 /* --- ПОВЕДЕНИЕ ЧЕК-БОКСА ПРИ :FOCUS --- */
@@ -1052,6 +1092,7 @@ img {
 
 /* --- СТИЛИЗАЦИЯ ССЫЛКИ ----  */
 .link-agree {
+  margin-left: 5px;
   color: var(--text-accent-color);
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
